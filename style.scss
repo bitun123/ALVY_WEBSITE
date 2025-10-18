@@ -21,15 +21,17 @@
      flex-direction: column;
      gap: $gap;
  }
-section{
-    max-width: 2000px;
-}
+
+ section {
+     max-width: 2000px;
+ }
+
  main {
      width: 100%;
      @include flex-culomn(1rem);
      align-items: center;
 
-     section {
+     section.view1 {
          width: 100%;
          @include flex-culomn(1rem);
          padding: 1rem;
@@ -81,32 +83,473 @@ section{
          }
 
      }
- }
 
+     section.view2 {
+         width: 100%;
+         @include flex-culomn(1rem);
+         padding: 1rem;
+
+         .top,
+         .bottom {
+             width: 100%;
+             display: flex;
+             align-items: center;
+             justify-content: space-around;
+
+             .first,
+             .second {
+                 text-align: center;
+                 @include flex-culomn(0.5rem);
+
+                 p {
+
+                     color: #3c3a3ae7;
+                     font-size: 1.2rem;
+                     font-weight: 400;
+                 }
+
+                 h1 {
+                     font-size: 3rem;
+                     font-weight: 400;
+                 }
+
+
+             }
+         }
+     }
+
+     section.view3 {
+         width: 100%;
+         @include flex-culomn(0.7rem);
+         padding: 1rem;
+
+         .top {
+             width: 100%;
+
+             img {
+                 width: 100%;
+                 border-radius: 1rem;
+             }
+         }
+
+         .bottom {
+             border-radius: 10px;
+             background-color: #292929b5;
+             // background-color: #ffff;
+             @include flex-culomn(3rem);
+             padding: 1.5rem;
+             text-transform: uppercase;
+
+             .first {
+                 font-weight: 450;
+             }
+
+             .second {
+                 @include flex-culomn(1rem);
+
+                 h1 {
+                     font-weight: 400;
+                 }
+
+                 .para {
+                     color: #92919182;
+                     font-weight: 500;
+                     line-height: 1.8rem;
+                 }
+             }
+
+         }
+     }
+
+     section.view4 {
+         width: 100%;
+         @include flex-culomn(0.7rem);
+         padding: 1rem;
+
+         .top {
+             width: 100%;
+
+             img {
+                 width: 100%;
+                 border-radius: 1rem;
+             }
+         }
+
+         .bottom {
+             border-radius: 10px;
+             background-color: #292929b5;
+             // background-color: #ffff;
+             @include flex-culomn(3rem);
+             padding: 1.5rem;
+             text-transform: uppercase;
+
+             .first {
+                 font-weight: 450;
+             }
+
+             .second {
+                 @include flex-culomn(1rem);
+
+                 h1 {
+                     font-weight: 400;
+                 }
+
+                 .para {
+                     color: #92919182;
+                     font-weight: 500;
+                     line-height: 1.8rem;
+                 }
+             }
+
+         }
+     }
+
+     section.view5 {
+         padding: 1rem;
+         width: 100%;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         text-transform: uppercase;
+
+         h1 {
+             font-size: 2rem;
+             font-weight: 450;
+         }
+
+         p {
+             font-size: 1.2rem;
+         }
+     }
+
+
+     section.view6 {
+         width: 100%;
+         @include flex-culomn(1rem);
+         padding: 1rem;
+
+         .card1,
+         .card2,
+         .card3 {
+             width: 100%;
+         }
+
+         .card1 {
+
+             background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02-p-800.webp);
+             background-size: cover;
+             background-position: center;
+             aspect-ratio: 1/1;
+             @include flex-culomn(1rem);
+             justify-content: space-between;
+             padding: 1rem;
+             border-radius: 1rem;
+
+             .first {
+                 width: 100%;
+                 display: flex;
+                 justify-content: flex-end;
+                 gap: 1rem;
+
+                 i {
+                     background-color: rgba(122, 113, 113, 0.5);
+                     border-radius: 50%;
+                     width: fit-content;
+                     font-size: 1.7rem;
+                     backdrop-filter: blur(2px);
+                     padding: 1px;
+                     font-weight: 300;
+                       padding: 0.7rem 0.7rem;
+                 }
+             }
+
+             .second {
+                 width: 100%;
+                 display: flex;
+                 justify-content: space-between;
+                 text-align: center;
+                 padding: 1rem 1rem;
+                 border-radius: 0.7rem;
+                 //  gap: 1rem;\
+                 background-color: rgba(122, 113, 113, 0.5);
+                 backdrop-filter: blur(3px);
+
+                 h1 {
+                     font-size: 1.4rem;
+                     text-transform: uppercase;
+                     font-weight: 400;
+
+                 }
+             }
+         }
+
+
+
+         .card2 {
+
+             background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01-p-800.webp);
+             background-size: cover;
+             background-position: center;
+             aspect-ratio: 1/1;
+             @include flex-culomn(1rem);
+             justify-content: space-between;
+             padding: 1rem;
+             border-radius: 1rem;
+
+             .first {
+                 width: 100%;
+                 display: flex;
+                 justify-content: flex-end;
+                 gap: 1rem;
+
+                 i {
+                     background-color: rgba(122, 113, 113, 0.5);
+                     border-radius: 50%;
+                     width: fit-content;
+                     font-size: 1.7rem;
+                     backdrop-filter: blur(2px);
+                     padding: 1px;
+                     font-weight: 100;
+                       padding: 0.7rem 0.7rem;
+
+                 }
+             }
+
+             .second {
+                 width: 100%;
+                 display: flex;
+                 justify-content: space-between;
+                 text-align: center;
+                 padding: 1rem 1rem;
+                 border-radius: 0.7rem;
+                 //  gap: 1rem;\
+                 background-color: rgba(122, 113, 113, 0.5);
+                 backdrop-filter: blur(3px);
+
+                 h1 {
+                     font-size: 1.4rem;
+                     text-transform: uppercase;
+                     font-weight: 400;
+
+                 }
+             }
+         }
+
+         .card3 {
+             background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03-p-800.webp);
+             background-size: cover;
+             background-position: center;
+             aspect-ratio: 1/1;
+             @include flex-culomn(1rem);
+             justify-content: space-between;
+             padding: 1rem;
+             border-radius: 1rem;
+
+             .first {
+                 width: 100%;
+                 display: flex;
+                 justify-content: flex-end;
+                 gap: 1rem;
+
+                 i {
+                     background-color: rgba(122, 113, 113, 0.5);
+                     border-radius: 50%;
+                     width: fit-content;
+                     font-size: 1.7rem;
+                     backdrop-filter: blur(2px);
+                     padding: 1px;
+                     font-weight: 300;
+                     padding: 0.7rem 0.7rem;
+                 }
+             }
+
+             .second {
+                 width: 100%;
+                 display: flex;
+                 justify-content: space-between;
+                 text-align: center;
+                 padding: 1rem 1rem;
+                 border-radius: 0.7rem;
+                 //  gap: 1rem;\
+                 background-color: rgba(122, 113, 113, 0.5);
+                 backdrop-filter: blur(3px);
+
+                 h1 {
+                     font-size: 1.4rem;
+                     text-transform: uppercase;
+                     font-weight: 400;
+
+                 }
+             }
+         }
+
+
+
+     }
+
+     section.view7 {
+         width: 100%;
+         @include flex-culomn(1rem);
+         padding: 1rem;
+
+         .top {
+             width: 100%;
+
+             img {
+                 width: 100%;
+                 border-radius: 1rem;
+             }
+         }
+
+         .bottom {
+             border-radius: 10px;
+             background-color: #292929b5;
+             @include flex-culomn(3rem);
+             padding: 1.5rem;
+
+             .first {
+                 h2 {
+                     font-size: 1rem;
+                     text-transform: uppercase;
+                     font-weight: 450;
+                     color: #6a6666;
+                 }
+
+                 h1 {
+                     font-weight: 500;
+                     text-transform: uppercase;
+                     font-size: 2.2rem;
+                 }
+             }
+             .second{
+                p{
+                    text-transform: uppercase;
+                    font-size: 1.1rem;
+                    i{
+                             background-color: rgba(122, 113, 113, 0.5);
+                             backdrop-filter: blur(2px);
+                             padding: 0.7rem 0.7rem;
+                             border-radius: 50%;
+                    }
+                }
+             }
+
+         }
+
+
+     }
+
+ }
 
  @media (min-width:900px) {
-    main{
-    // background-color: red;
- section{
-    flex-direction: row;
-    .top,.bottom{
-        width: 50%;
-    }
-    .bottom{
-        justify-content: space-between;
-        padding: 3rem;
-        .text{
-            gap: 1.5rem;
-            h1{
-                font-size: 4.1rem;
-            }
-            p{
-        width: 65%;
-                font-size: 1rem;
-            }
-        }
-    }
- }
-    
-    }
+     main {
+
+         // background-color: red;
+         section.view1 {
+             flex-direction: row;
+
+             .top,
+             .bottom {
+                 width: 50%;
+             }
+
+             .bottom {
+                 justify-content: space-between;
+                 padding: 3rem;
+
+                 .text {
+                     gap: 1.5rem;
+
+                     h1 {
+                         font-size: 4.1rem;
+                     }
+
+                     p {
+                         width: 65%;
+                         font-size: 1rem;
+                     }
+                 }
+             }
+         }
+
+         section.view2 {
+             flex-direction: row;
+         }
+
+         section.view3 {
+             flex-direction: row-reverse;
+
+             .top,
+             .bottom {
+                 width: 50%;
+                 justify-content: space-between;
+
+                 .para {
+                     display: flex;
+                     gap: 1rem;
+                 }
+             }
+
+         }
+
+         section.view4 {
+             flex-direction: row;
+
+             .top,
+             .bottom {
+                 width: 50%;
+                 justify-content: space-between;
+
+                 .para {
+                     display: flex;
+                     gap: 1rem;
+                 }
+             }
+
+         }
+
+         section.view5 {
+             justify-content: space-between;
+         }
+
+         section.view6 {
+             flex-direction: row;
+
+             .card1,
+             .card2,
+             .card3 {
+                 width: 33.33%;
+             }
+
+         }
+
+         section.view7 {
+             flex-direction: row;
+
+             .top,
+             .bottom {
+                 width: 50%;
+             }
+
+             .bottom {
+                 justify-content: space-between;
+                 padding: 3rem;
+
+                 .text {
+                     gap: 1.5rem;
+
+                     h1 {
+                         font-size: 4.1rem;
+                     }
+
+                     p {
+                         width: 65%;
+                         font-size: 1rem;
+                     }
+                 }
+             }
+         }
+
+
+     }
  }
